@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+    
+   
+    @include regular-font;
+    
+    
+    // Responsiv del av Top- Navbar marginal left right (mobile first)
+    
+
+    @include lg {
+        @include marginsection(20px);
+        
+    }
+
+    @include xxl {
+        @include marginsection(110px);
+    }
+    
+
+    
+}

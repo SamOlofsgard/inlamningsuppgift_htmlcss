@@ -1,0 +1,132 @@
+
+#navbar-top{ 
+    .navbar{
+    position:relative;
+        #check{
+            display:none;
+        }
+
+        .checkbtn{
+            display:block;
+            float:right;
+            line-height:130px;
+            cursor:pointer;
+
+            i{
+                font-size: 40px;
+            }
+        }
+
+        #check:checked ~ ul{
+            right:0;
+                
+        }
+        #check:checked ~ .checkbtn{
+            display:fixed;            
+        }
+
+        .logo {
+            position:absolute;
+            left:0;
+            top:35px;
+            
+
+        }
+
+
+        ul {
+            transition:right 1s ease-in-out; 
+            position:absolute;
+            z-index: 2; 
+            width:100%;
+            padding-left:0;
+            top:120px;
+            right:-100%;
+            @include background-gradient;
+            
+
+            li {
+                cursor:pointer;
+                display:flex;
+                justify-content: center;
+                font-size: 24px;
+                color:$light;
+                text-align:center;
+                margin:40px 0;
+                line-height:50px;
+                transition:background 2s;
+                transition:color 2s;
+              
+            }
+
+            li:hover{
+                    background:$light;
+                    color:$dark;
+                }
+        }
+    }
+}
+
+@include lg {
+   #navbar-top{
+       
+       border-bottom:1px solid  $grayborder;
+        .navbar {
+            height:110px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            
+            ul{
+                
+                height: 90px;
+                position:unset;
+                z-index:unset; 
+                padding-left:unset;
+                float:right;
+                display:flex;
+                justify-content: right;
+                align-items: center;
+                background:transparent ;
+
+                li{
+                    font-size: 17px;
+                    display:inline-block;
+                    line-height:unset;
+                    color:$dark;
+                    margin:unset;
+                    margin-right:50px;
+
+                    
+                }  
+            }  
+            
+            .checkbtn{
+                display:none;
+            }
+        }
+    }    
+}
+        
+       
+    
+
+
+
+
+
+
+
+    // // Responsiv del av Top- Navbar marginal left right (mobile first)
+    // @include lg {
+    //     .checkbtn{
+    //         display:none;
+    //         } 
+        
+    // }
+
+    // @include xxl {
+    //     @include marginsection();
+    // }
+    
+

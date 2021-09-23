@@ -1,0 +1,27 @@
+@mixin header-font($h-size: 1em) {
+    font-size: $h-size;
+    font-weight: 400;
+    font-family: $font-header;
+}
+
+@mixin regular-font($f-size: 18px) {
+    font-size: $f-size;
+    font-family: $font-regular;
+}
+
+@mixin marginsection($margin: 215px){
+    margin-left: $margin;
+    margin-right: $margin;
+
+}
+
+@mixin center-content($height: 100vh) {
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-gradient{
+    background: linear-gradient(90deg, rgba(242,55,121,1) 0%, rgba(255,104,3,1) 50%, rgba(255,166,46,1) 100%);
+}
