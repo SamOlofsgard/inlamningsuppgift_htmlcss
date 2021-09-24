@@ -2,85 +2,86 @@
     position: relative;
     left:0;
     top:0;
-
 }
 
-
-
 #navbar-top{ 
+    position:sticky;
+    z-index: 5;
+    top:0;
+    left:0;
+    background-color:#F8F9FE;
     .navbar{
-    height:110px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 600;
+        height:110px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        position: relative;
+        z-index: 4;
     
-
-        #check{
-            display:none;
-        }
-
-        .checkbtn{
-            cursor:pointer;
-
-            i{
-                font-size: 40px;
+            #check{
+                display:none;
             }
-        }
 
-        #check:checked ~ ul{
-            right:0;
-        }
-
-        #check:checked ~ .checkbtn{
-            display:fixed;            
-        }
-
-        ul {
-            
-            transition:right 1s ease-in-out; 
-            position:absolute;
-            z-index: 2; 
-            width:100%;
-            padding-left:0;
-            top:120px;
-            right:-100%;
-            @include background-gradient;
-
-            li {
+            .checkbtn{
                 cursor:pointer;
-                height:40px;
-                display:flex;
-                justify-content: center;
-                font-size: 24px;
-                color:$light;
-                text-align:center;
-                margin:40px 0;
-                line-height:50px;
-                transition:background 2s;
-                transition:color 1s;
 
                 i{
-                    font-size: 30px;
+                    font-size: 40px;
                 }
-
-                .fa-search {
-                    margin-top:5px;
-                    transition:color 1s;
-                }
-
-                .fa-search:hover {
-                    color:$orange;
-                }
-
             }
 
-            li:hover{
+            #check:checked ~ ul{
+               right:0;
+            }
+
+           #check:checked ~ .checkbtn{
+                display:fixed;            
+            }
+
+            ul {
+               transition:right 1s ease-in-out; 
+               position:absolute;
+               z-index: 2; 
+               width:100%;
+               padding-left:0;
+               top:120px;
+              right:-110%;
+               @include background-gradient;
+
+                li {
+                    cursor:pointer;
+                    height:40px;
+                    display:flex;
+                    justify-content: center;
+                    font-size: 24px;
+                    color:$light;
+                    text-align:center;
+                    margin:40px 0;
+                    line-height:50px;
+                    transition:background 2s;
+                    transition:color 1s;
+
+                    i{
+                        font-size: 30px;
+                    }
+
+                    .fa-search {
+                        margin-top:5px;
+                        transition:color 1s;
+                    }
+
+                    .fa-search:hover {
+                        color:$orange;
+                    }
+
+                }
+
+                li:hover{
                     background:#F8F9FE;
                     color:$dark;
                 }
-
-        }
+            }
 
         .button {
             @include button(150px);
@@ -109,7 +110,6 @@
                 position:unset;
                 z-index:unset; 
                 padding-left:unset;
-                // float:right;
                 display:flex;
                 justify-content: right;
                 align-items:center;
@@ -153,26 +153,3 @@
         }
     }    
 }
-        
-       
-    
-
-
-
-
-
-
-
-    // // Responsiv del av Top- Navbar marginal left right (mobile first)
-    // @include lg {
-    //     .checkbtn{
-    //         display:none;
-    //         } 
-        
-    // }
-
-    // @include xxl {
-    //     @include marginsection();
-    // }
-    
-
