@@ -9,7 +9,12 @@ html, body {
     list-style:none;
     margin-left:5px;
     margin-right:5px;
-    background-color: #F8F9FE;
+
+    
+    background-image:url(../images/background_top.svg);
+    background-repeat: no-repeat;
+    background-position:-250px 0px;
+    color:$textdark;
    
     @include regular-font;
     

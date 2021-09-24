@@ -1,12 +1,13 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
 $font-header: 'Poppins', sans-serif;
 $font-regular: 'Roboto', sans-serif;
  
 // Colors
 $dark: #252525; //header color
-$light: #F8F9FE;
-$grayfill: #414149; //Placeholder color
+$textdark: #57647C;//regular text
+$light: #ffffff;
+$grayfill: #050505; //Placeholder color
 $grayborder: #e4e3e3; //Placeholder color
 $red: #F23779;
 $orange: #FF6803; //small header color
