@@ -1,8 +1,8 @@
-.background_top{
-    position: relative;
-    left:0;
-    top:0;
-}
+// .background_top{
+//     position: relative;
+//     left:0;
+//     top:0;
+// }
 
 #navbar-top{ 
     position:sticky;
@@ -10,7 +10,9 @@
     top:0;
     left:0;
     background-color:#F8F9FE;
+ 
     .navbar{
+        
         height:110px;
         display:flex;
         align-items: center;
@@ -35,22 +37,25 @@
                right:0;
             }
 
-           #check:checked ~ .checkbtn{
+            #check:checked ~ .checkbtn{
                 display:fixed;            
             }
 
+
             ul {
+               
                transition:right 1s ease-in-out; 
                position:absolute;
                z-index: 2; 
                width:100%;
                padding-left:0;
                top:120px;
-              right:-110%;
+               right:-110%;
                @include background-gradient;
-
-                li {
+                    li {
+                    
                     cursor:pointer;
+                    
                     height:40px;
                     display:flex;
                     justify-content: center;
@@ -84,6 +89,8 @@
             }
 
         .button {
+            border:1px solid black;
+            line-height: 200px;
             @include button(150px);
             
         }
@@ -105,8 +112,8 @@
             align-items: center;
             
             ul{
-                
-                height: 90px;
+                background:#F8F9FE !important;
+                height: 110px;
                 position:unset;
                 z-index:unset; 
                 padding-left:unset;
