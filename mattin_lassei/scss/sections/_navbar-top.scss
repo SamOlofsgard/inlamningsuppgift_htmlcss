@@ -34,7 +34,7 @@
             }
 
             #check:checked ~ ul{
-               right:0;
+               left:0;
             }
 
             #check:checked ~ .checkbtn{
@@ -44,13 +44,13 @@
 
             ul {
                
-               transition:right 1s ease-in-out; 
+               transition:left 1s ease-in-out; 
                position:absolute;
                z-index: 2; 
                width:100%;
                padding-left:0;
                top:120px;
-               right:-110%;
+               left:-110%;
                @include background-gradient;
                     li {
                     

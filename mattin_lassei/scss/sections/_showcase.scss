@@ -1,4 +1,5 @@
 #showcase{
+padding-bottom:200px;
     .container{
         text-align:center;
         display:grid;
@@ -6,30 +7,38 @@
         grid-template-columns: 300px;
         grid-template-rows: 340px 160px 90px 100px;
 
-        
-
         .button{
-            
             @include button(250px,60px);
             justify-self: center;
-            
         }
+
         .button:hover{
             @include buttonhover;
         }
-        .images  {
-            display:none;
+
+        .images{
+            display: grid;    
+            position:relative;
+                .image1{
+                    width: 400px;
+                    height: 400px;
+                    position:absolute;
+                    z-index: 0;
+                    left:-40px;
+                    top:-40px;
+                }
+                .image2{
+                    width: 400px;
+                    height: 400px;
+                    position:relative;
+                    z-index: 1;
+                    left:-40px;
+                    top:-20px;
+      
+                }
         }
-        
     }
-
-
 }
-
-
-
-
-
 
 @include md {
 #showcase {
@@ -55,24 +64,15 @@
         }
         
         .images{
-        display: grid;    
-        position:relative;
             .image1{
                 width: 500px;
                 height: 500px;
-                position:absolute;
-                z-index: 0;
                 left:0;
-                top:-40px;
             }
             .image2{
                 width: 500px;
                 height: 500px;
-                position:relative;
-                z-index: 1;
                 left:0;
-                top:-20px;
-  
             }
         }
     }

@@ -5,9 +5,25 @@
     line-height:68px;
     color:$dark;
 }
+
+.header2{
+    font-family:$font-header;
+    font-size: 22px;
+    font-weight: 900;
+    line-height:75px;
+    color:$dark;
+}
     
 .regulartext{
     font-size: 18px;
     line-height: 30px;
+    
+}
+
+.pink_header{
+    font-family:$font-header;
+    font-size: 60px;
+    line-height: 30px;
+    color:$pink;
     
 }
