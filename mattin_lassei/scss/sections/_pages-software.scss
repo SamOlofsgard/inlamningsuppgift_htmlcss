@@ -1,0 +1,94 @@
+#pages_software {
+    padding-bottom:110px;
+    position:relative;
+    .container {
+        img{
+        width:350px;
+
+        position: absolute;
+        z-index:-1;
+        align-self: center;
+        top:280px;
+        }
+        height:700px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+
+        .box1{
+            width:340px ;
+            font-size: 48px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .box2 {
+            width: 340px;
+            text-align:center;
+        }
+        .box3{
+            padding-top:80px;
+            width:340px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .box{
+                text-align: center;
+                line-height: 70px;
+            }
+            
+        }
+        .box4{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 3px $grayborder ;
+            width:340px;
+            padding:40px;
+            height: 250px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .header2{
+                line-height: 30px;
+
+            }
+            button{
+                @include button(140px,50px);
+                align-self: center;
+            }
+        }
+        @include md {
+            img{
+                width:unset;
+            }
+            .box1{
+                width:630px ;
+            }
+            .box2 {
+                width: 520px;
+            }
+            .box3{
+                width:700px;
+            }
+            .box4 {
+                flex-direction: row;
+                text-align: left;
+                width:630px;
+                height: 140px;
+            }
+        }
+
+        @include xl {
+            .box3{
+                width:980px;
+            }
+        }
+        
+    }
+}
+

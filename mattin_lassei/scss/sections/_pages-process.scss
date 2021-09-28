@@ -7,16 +7,12 @@
         justify-content: center;
 
         .img{
-            
             display:none;
             grid-column: 1;
             grid-row:1/5;
             img{
                 justify-self: left;
             }
-            
-            // justify-self: center;
-            // border:1px solid $placeholder;
             margin-top:40px;
         }
         .header1 {
@@ -35,9 +31,6 @@
             .header2{
                 line-height:40px;
             }
-            
-            
-            
             .pink_header{
                 position:absolute;
                 left:0;
@@ -46,10 +39,7 @@
             }
             .header2{
                 font-size: 24px;
-
             }
-            
-            
         }
     }
 }
@@ -57,11 +47,9 @@
     #pages_process{
         .container{
             justify-content: left;
-            // grid-template-columns: minmax(685px, 1fr) 485px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 270px 210px 210px 210px;
             
-
             .img{
             display:unset;
             margin-left:-50px;

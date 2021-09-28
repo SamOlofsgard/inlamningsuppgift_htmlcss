@@ -1,9 +1,3 @@
-// .background_top{
-//     position: relative;
-//     left:0;
-//     top:0;
-// }
-
 #navbar-top{ 
     position:sticky;
     z-index: 5;
@@ -12,7 +6,6 @@
     background-color:#F8F9FE;
  
     .navbar{
-        
         height:110px;
         display:flex;
         align-items: center;
@@ -50,12 +43,10 @@
                width:100%;
                padding-left:0;
                top:120px;
-               left:-110%;
+               left:-100%;
                @include background-gradient;
                     li {
-                    
                     cursor:pointer;
-                    
                     height:40px;
                     display:flex;
                     justify-content: center;
