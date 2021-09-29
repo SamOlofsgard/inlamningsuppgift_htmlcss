@@ -4,17 +4,14 @@
     font-family: $font-header;
 }
 
-
-
 @mixin regular-font($f-size: 18px) {
     font-size: $f-size;
     font-family: $font-regular;
 }
 
-@mixin marginsection($margin: 215px){
-    margin-left: $margin;
-    margin-right: $margin;
-
+@mixin paddingsection($padding: 215px){
+    padding-left: $padding;
+    padding-right: $padding;
 }
 
 @mixin center-content {
@@ -32,25 +29,18 @@
     height: $height;
     font-family: $font-regular;
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(242,55,121,1) 0%, rgba(255,104,3,1) 50%, rgba(255,166,46,1) 100%);
-    color:$light;
-    border:none;
+    background:transparent;
+    color:$dark;
+    border:1px solid $orange;
     border-radius: 10px;
     font-size: 17px;
-    font-weight: 400;
-
+    font-weight: 700;
+    transition: background 1s;
     @include center-content;
-    
 }
 
 @mixin buttonhover{
-   
-    background:transparent;
+    background: $orange;
     color:$dark;
     border:2px solid $orange;
-    
 }
-
-
-  
- 

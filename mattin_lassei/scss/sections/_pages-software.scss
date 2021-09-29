@@ -2,19 +2,19 @@
     padding-bottom:110px;
     position:relative;
     .container {
-        img{
-        width:350px;
-
-        position: absolute;
-        z-index:-1;
-        align-self: center;
-        top:280px;
-        }
         height:700px;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content:space-evenly;
+
+        img{
+            width:350px;
+            position: absolute;
+            z-index:-1;
+            align-self: center;
+            top:280px;
+        }
 
         .box1{
             width:340px ;
@@ -27,6 +27,7 @@
             width: 340px;
             text-align:center;
         }
+
         .box3{
             padding-top:80px;
             width:340px;
@@ -39,8 +40,8 @@
                 text-align: center;
                 line-height: 70px;
             }
-            
         }
+
         .box4{
             background-color: white;
             border-radius: 10px;
@@ -88,7 +89,6 @@
                 width:980px;
             }
         }
-        
     }
 }
 
