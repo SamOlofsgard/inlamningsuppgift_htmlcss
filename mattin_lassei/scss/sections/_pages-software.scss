@@ -18,9 +18,11 @@
 
         .box1{
             width:340px ;
-            font-size: 48px;
             text-align: center;
             line-height: 60px;
+            h2{
+                font-size: 40px;
+            }
         }
 
         .box2 {
@@ -54,8 +56,12 @@
             justify-content: space-between;
             flex-direction: column;
 
-            .header2{
+            strong{
+                font-family:$font-header;
                 line-height: 30px;
+                font-weight: 700;
+                font-size:21px ;
+                color:$dark;
 
             }
             button{
@@ -72,6 +78,7 @@
             }
             .box1{
                 width:630px ;
+                
             }
             .box2 {
                 width: 520px;
@@ -88,6 +95,11 @@
         }
 
         @include xl {
+            .box1 {
+                h2{
+                    font-size: 48px;
+                }
+            }
             .box3{
                 width:980px;
             }

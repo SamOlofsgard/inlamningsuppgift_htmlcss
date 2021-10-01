@@ -12,7 +12,7 @@
         justify-content: space-between;
         font-weight: 600;
         position: relative;
-        z-index: 4;
+        z-index: 3;
         .logo{
             padding-left:20px;
         }
@@ -25,25 +25,25 @@
             cursor:pointer;
             i{
                 font-size: 40px;
+                padding-right:10px;
             }
         }
 
         #check:checked ~ ul{
-            left:0;
+            top:90px;
         }
 
         #check:checked ~ .checkbtn{
             display:fixed;            
         }
         ul {
-            transition:left 1s ease-in-out; 
+            transition:top 1s ease-in-out; 
             position:absolute;
-            z-index: 2; 
+            z-index: -1; 
             width:100%;
             padding-left:0;
-            top:120px;
-            left:-100%;
-            @include background-gradient;
+            top:-600px;
+            background-color: #F8F9FE;
                 li {
                 cursor:pointer;
                 height:40px;
@@ -60,25 +60,35 @@
                 i{
                     font-size: 30px;
                 }
-
+                .search{
+                    display:none;
+                }
                 .fa-search {
-                    margin-top:5px;
                     transition:color 1s;
                 }
 
                 .fa-search:hover {
+                    
                     color:$orange;
                 }
+                
             }
 
-            li:hover{
+            li:first-child{
+                margin-top:0px;                    
+                }
+            
+            a{
+                transition: color 0.5s;
+            }
+            a:hover{
                 background:#F8F9FE;
-                color:$dark;
+                color:$orange;
             }
         }
 
         .button {
-            border:1px solid black;
+            
             line-height: 200px;
             @include button(150px);
             
@@ -120,20 +130,13 @@
                     margin:unset;
                     margin-right:50px;
                     background-color:#F8F9FE;
-                    .a{
-                        transition: color 0.5s;
-                    }
-                    
-                    .a:hover{
-                        background-color:#F8F9FE;
-                        color:$orange;
-                    }
                 }  
 
                 li:last-child{
                     margin-right:10px;
                 }
                 .search {
+                    display: flex;
                     margin-right:30px;
                     margin-left:-20px;
                 }

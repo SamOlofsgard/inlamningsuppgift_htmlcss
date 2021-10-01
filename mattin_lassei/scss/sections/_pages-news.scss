@@ -10,7 +10,7 @@
             align-items:center;
             justify-content:space-evenly;
             
-            .header1{
+            h2{
                 font-size: 40px;
             }
             .box{
@@ -38,7 +38,7 @@
                 img{
                     margin-top:-20px;
                 }
-                .header2{
+                h3{
                     font-size: 22px;
                     line-height: 30px;
                 }
@@ -50,7 +50,7 @@
                     margin-left:20px;
                     @include button(120px,50px);
                 }
-                 button:hover{
+                button:hover{
                     @include buttonhover;
                 }
             }
@@ -62,7 +62,7 @@
                     width: 520px;
                     text-align: center;
                 }
-                .header1{
+                h2{
                     font-size: 48px;
                 }
             }

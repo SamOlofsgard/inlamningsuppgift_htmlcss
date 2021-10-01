@@ -16,7 +16,7 @@
             flex-direction: column;
             justify-content: space-between;
             
-            .header1 {
+            h2 {
                 font-size: 40px;
             }
                         
@@ -44,11 +44,11 @@
         .container {
             justify-content:left;
             text-align:left;
-            grid-template-columns:500px repeat(auto-fit,minmax(400px,auto));
+            grid-template-columns:500px repeat(auto-fit,minmax(350px,auto));
             .box1 {
                 width: 500px;
 
-                .header1 {
+                h2{
                     font-size: 60px;
                 }
                 .button{
