@@ -62,6 +62,9 @@
                 @include button(140px,50px);
                 align-self: center;
             }
+            button:hover{
+                @include buttonhover;
+            }
         }
         @include md {
             img{

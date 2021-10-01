@@ -92,7 +92,6 @@
 
 @include xl {
    #navbar-top{
-       
        border-bottom:1px solid  $grayborder;
         .navbar {
             height:110px;
@@ -125,7 +124,6 @@
                         transition: color 0.5s;
                     }
                     
-
                     .a:hover{
                         background-color:#F8F9FE;
                         color:$orange;
@@ -139,8 +137,6 @@
                     margin-right:30px;
                     margin-left:-20px;
                 }
-
-
             }  
             
             .checkbtn{
